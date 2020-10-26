@@ -8,7 +8,13 @@ libopencv-dev libvpx-dev libgavl1 libx264-dev
 
 git clone https://github.com/bcoudurier/FFmbc
 cd FFmbc
-./configure --enable-gpl --enable-nonfree --enable-shared --enable-postproc --enable-runtime-cpudetect --enable-frei0r --enable-libdc1394 --enable-libfaac --enable-libgsm --enable-libmp3lame --enable-libspeex --enable-libtheora --enable-libvorbis --enable-libvpx --enable-libx264 --enable-pthreads --enable-zlib --disable-doc
+./configure --enable-gpl --enable-nonfree --enable-shared \
+	--enable-postproc --enable-runtime-cpudetect \
+	--enable-frei0r --enable-libdc1394 --enable-libfaac \
+	--enable-libgsm --enable-libmp3lame --enable-libspeex \
+	--enable-libtheora --enable-libvorbis --enable-libvpx \
+	--enable-libx264 --enable-pthreads --enable-zlib \
+	--disable-doc
 make -j$(nproc)
 sudo make install 
 sudo ldconfig
