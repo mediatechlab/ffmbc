@@ -1,3 +1,5 @@
+Compilation was tested on ubuntu 18 64 bits
+
 FFmbc usage:
 
 In order to generate a **Sony MXF XDCAM HD** file
